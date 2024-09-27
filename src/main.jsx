@@ -6,6 +6,8 @@ import Home from './routes/Home.jsx'
 import Error from './routes/Error.jsx'
 import Login from './routes/Login.jsx'
 import Dashboard from './routes/Dashboard.jsx'
+import CadUsuarios from './routes/CadUsuarios.jsx'
+import ListarUsuarios from './routes/ListarUsuarios.jsx'
 
 //criando função
 const router = createBrowserRouter([
@@ -18,7 +20,12 @@ const router = createBrowserRouter([
     children:[
       {path:'/', element:<Home/>},
       {path:'/login', element:<Login/>},
-      {path:'/dashboard', element:<Dashboard/>}
+      {path:'/dashboard', element:<Dashboard/>},
+      {path:'/cadUsuarios', element:<CadUsuarios/>},
+      {path:'/listarUsuarios', element:<ListarUsuarios/>},
+
+      //editarUsuario NÃO PODE ESQUECER DO :id ( PARA EDITAR E EXCLUIR)
+      {path:'/editarUsuarios/:id', element:<CadUsuarios/>},
     ]
   }
 ])

@@ -1,4 +1,4 @@
-# 1.Instalando o react-router-dom
+# 1. Instalando o react-router-dom
 npm install react-router-dom
 
 # 2. Instalando o styled-components
@@ -23,3 +23,15 @@ EM package.jason: "backend": "json-server --watch dados.json --port 5000"
         }
     ]
 }
+
+# 4 Add button dashborad
+Criando button de logout na page. dashboard
+
+# 5 Alterando o Nav
+Mostrando qual usuario está logado e se está logado
+
+# 6 Instalando biblioteca do react-icons
+npm install react-icons
+
+# 7 Fazendo a pag. ListarUsuarios
+Lista os usuarios e senha de cada um, permitindo editar e excluir as contas
